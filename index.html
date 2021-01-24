@@ -34,9 +34,9 @@
                 <span>1h 55min</span>
                 <span>Action</span>
             </h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus necessitatibus officia eveniet
-                voluptate repudiandae nemo, dolorem quod exercitationem voluptatum magnam autem minima dicta illo rerum
-                est blanditiis optio odit? Consequuntur.</p>
+            <p>Plot. In Imperial China, Hua Mulan is an adventurous and active girl, to the disappointment of her
+                parents, who hope that one day she will be wed to a good husband. As a young woman, Mulan is forced to
+                meet with a matchmaker to demonstrate her fitness as a future wife.</p>
             <div class="buttons">
                 <a href="#">
                     <i class="fa fa-play" aria-hidden="true"></i>
@@ -46,7 +46,22 @@
                     My List</a>
             </div>
         </div>
+        <a class="play" onClick="toggleVideo();"><img src="play.png" alt="">Watch trailer</a>
     </div>
+    <div class="trailer">
+        <video src="mulan-big-game-spot_h480p.mov" controls="true" autoplay="true"></video>
+        <img src="close.png" class="close" alt="" onClick="toggleVideo();">
+    </div>
+
+    <script>
+        function toggleVideo() {
+            const video = document.querySelector('video')
+            const trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause()
+        }
+    </script>
 </body>
 
 </html>
