@@ -223,6 +223,9 @@ header .logo img{
     .banner{
         padding:100px 50px;
     }
+    .play{
+        left:48px
+    }
     .trailer video
     {
         max-width: 90%;
